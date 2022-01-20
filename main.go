@@ -9,7 +9,7 @@ import (
 func main() {
   
 	c := cron.New()
-	//定时任务 cron表达式，每10分钟一次  精确到秒
+	//定时任务 cron表达式，每10s一次  精确到秒
 	c.AddFunc("*/10 * * * * *", func() {
 		start := time.Now().Add(-30*time.Second).UnixNano() / int64(time.Second)
 		end := time.Now().Add(-1*time.Second).UnixNano() / int64(time.Second)
