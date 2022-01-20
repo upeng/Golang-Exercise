@@ -23,6 +23,8 @@ func main() {
 	defer c.Stop()
 	select {} //阻塞主线程停止
 
+  // just test file
+
 }
 // import (
 // 	"encoding/json"
